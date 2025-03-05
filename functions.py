@@ -15,10 +15,15 @@ try:
 except FileNotFoundError as e:
     print("Error: " + str(e))
 
+# Prices function here
 
 
 
+# Order number function here
 
+
+
+# Time function here
 
 
 
