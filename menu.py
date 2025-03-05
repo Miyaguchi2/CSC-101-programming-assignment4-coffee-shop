@@ -1,6 +1,7 @@
 # this is used to change the menu that the program will process.
 # the .txt file that is entered should have three lines, each with corresponding menu items, prices, and prep times.
 # 3 lines in total
+from data import Order
 
 establishment = "ristorante_italia.txt"
 
@@ -12,3 +13,9 @@ try:
         prep_time = file.readline().rstrip("\n").split("~")
 except FileNotFoundError as e:
     print("Error: " + str(e))
+
+
+def adding_prices(str):
+
+
+   # def adding_prices(food_list:[str], prices)
