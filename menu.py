@@ -12,3 +12,5 @@ try:
         prep_time = file.readline().rstrip("\n").split("~")
 except FileNotFoundError as e:
     print("Error: " + str(e))
+
+print("h")
