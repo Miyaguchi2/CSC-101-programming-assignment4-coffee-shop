@@ -16,10 +16,14 @@ except FileNotFoundError as e:
     print("Error: " + str(e))
     print("hello")
 
+# Prices function here
 
 
 
+# Order number function here
 
 
+
+# Time function here
 
 

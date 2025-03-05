@@ -1,5 +1,4 @@
 import unittest
-
 import menu
 import data
 
@@ -10,7 +9,6 @@ class MyTestCase(unittest.TestCase):
 
 Order = data.Order
     def test_adding_time1(self):
-
         food_list = ["Mocha Coffee", "Iced Vanilla Coffee", "Vanilla latte", "Mocha Iced coffee", "Matcha milk tea boba", "Milk tea Boba", "Taro milk tea boba", "Birthday cake pop", "Breakfast sandwich", "breakfast Croissan'wich", "Donuts"]
         time_list = [7, 10, 9, 10, 7, 7, 7, 1, 15, 15, 1]
         expected = [7,10,9,10,7,7,7,1,15,15,1]
