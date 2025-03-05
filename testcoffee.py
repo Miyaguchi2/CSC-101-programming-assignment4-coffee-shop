@@ -1,6 +1,6 @@
 import unittest
 
-import coffee
+import menu
 import data
 
 
@@ -14,7 +14,7 @@ Order = data.Order
         food_list = ["Mocha Coffee", "Iced Vanilla Coffee", "Vanilla latte", "Mocha Iced coffee", "Matcha milk tea boba", "Milk tea Boba", "Taro milk tea boba", "Birthday cake pop", "Breakfast sandwich", "breakfast Croissan'wich", "Donuts"]
         time_list = [7, 10, 9, 10, 7, 7, 7, 1, 15, 15, 1]
         expected = [7,10,9,10,7,7,7,1,15,15,1]
-        result = coffee.adding_time(item_list, time_list)
+        result = menu.adding_time(item_list, time_list)
         self.assertEqual(expected, result)
 
 

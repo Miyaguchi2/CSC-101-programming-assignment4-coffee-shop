@@ -14,8 +14,3 @@ try:
 except FileNotFoundError as e:
     print("Error: " + str(e))
 
-
-def adding_prices(str):
-
-
-   # def adding_prices(food_list:[str], prices)
