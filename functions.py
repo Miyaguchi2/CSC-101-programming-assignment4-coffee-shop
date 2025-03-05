@@ -1,3 +1,5 @@
+import input
+
 # this is used to change the menu that the program will process.
 # the .txt file that is entered should have three lines, each with corresponding menu items, prices, and prep times.
 # 3 lines in total
@@ -13,4 +15,10 @@ try:
 except FileNotFoundError as e:
     print("Error: " + str(e))
 
-print("h")
+
+
+
+
+
+
+
