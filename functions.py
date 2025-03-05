@@ -14,6 +14,7 @@ try:
         prep_time = file.readline().rstrip("\n").split("~")
 except FileNotFoundError as e:
     print("Error: " + str(e))
+    print("hello")
 
 # Prices function here
 order_list = [0,2,3]
