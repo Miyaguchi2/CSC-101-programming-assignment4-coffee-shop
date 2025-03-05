@@ -16,7 +16,12 @@ except FileNotFoundError as e:
     print("Error: " + str(e))
 
 # Prices function here
+order_list = [0,2,3]
 
+x = 0
+for idx in order_list:
+    x = x + float(prices[idx])
+print(x)
 
 
 # Order number function here

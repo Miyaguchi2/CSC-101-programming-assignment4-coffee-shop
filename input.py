@@ -12,6 +12,7 @@ if __name__ == '__main__':
                 if user_input == "done":
                     print(order_index_list)
                     # call all functions in functions.py
+                    order_index_list = []
                     user_input = input("Enter item number. Type 'done' when you are finished with the order, or 'close' to end the program: ")
                 elif user_input == "close":
                     print("Stopping execution...")
