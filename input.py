@@ -18,9 +18,3 @@ if __name__ == '__main__':
                     exit()
                 else:
                     user_input = input("Error, invalid input. enter an item number: ")
-
-
-
-
-
-
