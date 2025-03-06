@@ -56,5 +56,9 @@ def create_order_num() -> str:
     return order_num
 
 # Time function here
+def adding_time(order_list:list[int]) -> float:
+    total_time = 0
+    for idx in order_list:
+        total_time += float(prep_time[idx])
 
-
+    return total_time
