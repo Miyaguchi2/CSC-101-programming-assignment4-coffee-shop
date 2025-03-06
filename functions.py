@@ -27,11 +27,16 @@ except FileNotFoundError as e:
     print("Error: " + str(e))
 
 # Prices function here
-order_list = [0,2,3]
+#this function adds all the prices of the order and gives the user the total
+#this function takes the parameters of a list
+def adding_prices(order_list:list[int]) -> float:
+    total_prices = 0
+    for idx in order_list:
+        total_prices += float(prices[idx])
 
-x = 0
-for idx in order_list:
-    x = x + float(prices[idx])
+    return total_prices
+
+
 
 # Order number function here
 # this function outputs a unique string everytime it is called, which acts as an order number
