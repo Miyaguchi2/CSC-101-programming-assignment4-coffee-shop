@@ -4,17 +4,30 @@ import data
 
 
 class MyTestCase(unittest.TestCase):
-    def test_something(self):
-        self.assertEqual(True, False)  # add assertion here
+    # assuming establishment = "risorante_italia.txt"
+    def test_add_prices(self):
+        input = [0,1,2]
+        expected = 37.97
+        test = functions.adding_prices(input)
+        self.assertEqual(test, expected)
 
-    '''def test_adding_time1(self):
-        food_list = ["Mocha Coffee", "Iced Vanilla Coffee", "Vanilla latte", "Mocha Iced coffee", "Matcha milk tea boba", "Milk tea Boba", "Taro milk tea boba", "Birthday cake pop", "Breakfast sandwich", "breakfast Croissan'wich", "Donuts"]
-        time_list = [7, 10, 9, 10, 7, 7, 7, 1, 15, 15, 1]
-        expected = [7,10,9,10,7,7,7,1,15,15,1]
-        result = menu.adding_time(item_list, time_list)
-        self.assertEqual(expected, result)'''
+    def test_add_prices_1(self):
+        input = []
+        expected = 0.0
+        test = functions.adding_prices(input)
+        self.assertEqual(test, expected)
 
+    def test_add_times_(self):
+        input = [0,1,2]
+        expected = 55
+        test = functions.adding_time(input)
+        self.assertEqual(test, expected)
 
+    def test_add_times_2(self):
+        input = []
+        expected = 0.0
+        test = functions.adding_time(input)
+        self.assertEqual(test, expected)
 
 if __name__ == '__main__':
     unittest.main()

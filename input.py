@@ -1,3 +1,4 @@
+import data
 import functions
 
 if __name__ == '__main__':
@@ -9,8 +10,11 @@ if __name__ == '__main__':
             order_index_list.append(int(user_input))
         except ValueError:
             if user_input == "done":
-                print(order_index_list)
-                # call all functions in functions.py
+                total_price = functions.adding_prices(order_index_list)
+                total_time = functions.adding_time(order_index_list)
+                order_num = functions.create_order_num()
+                order = data.Order(total_price, total_time, order_num)
+                print(order)
                 order_index_list = []
                 break
             else:

@@ -1,11 +1,10 @@
 from os import write
 
-import input
 
 # this is used to change the menu that the program will process.
 # the .txt file that is entered should have three lines, each with corresponding menu items, prices, and prep times.
 # 3 lines in total
-establishment = "ristorante_italia.txt"
+establishment = "coffee_shop.txt"
 
 # "order_tracker.txt" keeps track of the total orders to ensure that each new order has a unique order number
 order_nums = "order_tracker.txt"
@@ -26,19 +25,21 @@ try:
 except FileNotFoundError as e:
     print("Error: " + str(e))
 
-# Prices function here
+
 #this function adds all the prices of the order and gives the user the total
 #this function takes the parameters of a list
 def adding_prices(order_list:list[int]) -> float:
+    if len(order_list) == 0:
+        return 0.0
     total_prices = 0
     for idx in order_list:
-        total_prices += float(prices[idx])
+        if len(order_list) > idx > 0:
+            total_prices += float(prices[idx])
 
     return total_prices
 
 
 
-# Order number function here
 # this function outputs a unique string everytime it is called, which acts as an order number
 # no input is required
 def create_order_num() -> str:
@@ -55,10 +56,15 @@ def create_order_num() -> str:
 
     return order_num
 
-# Time function here
-def adding_time(order_list:list[int]) -> float:
+
+# this function adds up how long each item in the order will take to prepare, and gives the user the total
+# a for loop is used to go through the list
+def adding_time(order_list:list[int]) -> int:
+    if len(order_list) == 0:
+        return 0
     total_time = 0
     for idx in order_list:
-        total_time += float(prep_time[idx])
+        if len(order_list) > idx > 0:
+            total_time += int(prep_time[idx])
 
     return total_time
