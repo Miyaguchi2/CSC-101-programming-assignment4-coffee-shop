@@ -1,3 +1,3 @@
-coffee~bagel~green tea~coffee cake~croissant
-2.99~3.99~1.99~4.99~4.99
-5~1~5~1~1
+coffee~iced coffee~bagel~green tea~mocha boba~ milktea boba~coffee cake~croissant~cake pop~donuts
+3.99~4.99~2.99~2.99~5.99~5.99~4.99~4.99~2.99~2.99
+5~7~1~5~10~10~1~1~1~1
