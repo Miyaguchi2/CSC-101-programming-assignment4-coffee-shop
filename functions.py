@@ -39,7 +39,6 @@ def adding_prices(order_list:list[int]) -> float:
     return total_prices
 
 
-
 # this function outputs a unique string everytime it is called, which acts as an order number
 # no input is required
 def create_order_num() -> str:
