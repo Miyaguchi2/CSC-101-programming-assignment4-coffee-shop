@@ -5,9 +5,13 @@ class Order:
         self.order_num = order_num
 
     def __str__(self):
-        return "Order Number: {}\nTotal due: ${}\nYour order will be ready in {} minutes.".format(self.order_num, self.cost, self.time)
-
+        print("-------------------------------------------------------------")
+        return ("Order Number: {}\nTotal due: ${}\nThe order will be ready in {} "
+                "minutes.\n-------------------------------------------------------------"
+                .format(self.order_num, self.cost, self.time))
     def __repr__(self):
-        return "Order Number: {}\nTotal due: ${}\nYour order will be ready in {} minutes.".format(self.order_num, self.cost, self.time)
-
+        print("-------------------------------------------------------------\n")
+        return ("Order Number: {}\nTotal due: ${}\nThe order will be ready in {} "
+                "minutes.\n\n-------------------------------------------------------------"
+            .format(self.order_num, self.cost, self.time))
 

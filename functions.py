@@ -1,10 +1,8 @@
-from os import write
-
 
 # this is used to change the menu that the program will process.
 # the .txt file that is entered should have three lines, each with corresponding menu items, prices, and prep times.
 # 3 lines in total
-establishment = "coffee_shop.txt"
+establishment = "ristorante_italia.txt"
 
 # "order_tracker.txt" keeps track of the total orders to ensure that each new order has a unique order number
 order_nums = "order_tracker.txt"
@@ -33,7 +31,7 @@ def adding_prices(order_list:list[int]) -> float:
         return 0.0
     total_prices = 0
     for idx in order_list:
-        if len(order_list) > idx > 0:
+        if len(menu) > idx >= 0:
             total_prices += float(prices[idx])
 
     return total_prices
@@ -63,7 +61,7 @@ def adding_time(order_list:list[int]) -> int:
         return 0
     total_time = 0
     for idx in order_list:
-        if len(order_list) > idx > 0:
+        if len(menu) > idx >= 0:
             total_time += int(prep_time[idx])
 
     return total_time
