@@ -48,5 +48,21 @@ class MyTestCase(unittest.TestCase):
         test = functions.adding_time(input)
         self.assertEqual(test, expected)
 
+# test create_order_num()
+    def test_create_order_num_1(self): #assuming the count in order_tracker.txt = 2
+        test = functions.create_order_num()
+        expected = "002"
+        self.assertEqual(test, expected)
+
+    def test_create_order_num_2(self): #assuming the count in order_tracker.txt = 10
+        test = functions.create_order_num()
+        expected = "010"
+        self.assertEqual(test, expected)
+
+    def test_create_order_num_3(self):
+        test = functions.create_order_num() # assuming the count in order_tracker.txt = 100
+        expected = "100"
+        self.assertEqual(test, expected)
+
 if __name__ == '__main__':
     unittest.main()

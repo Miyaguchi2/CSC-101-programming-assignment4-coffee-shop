@@ -2,7 +2,7 @@
 # this is used to change the menu that the program will process.
 # the .txt file that is entered should have three lines, each with corresponding menu items, prices, and prep times.
 # 3 lines in total
-establishment = "ristorante_italia.txt"
+establishment = "coffee_shop.txt"
 
 # "order_tracker.txt" keeps track of the total orders to ensure that each new order has a unique order number
 order_nums = "order_tracker.txt"
@@ -34,7 +34,7 @@ def adding_prices(order_list:list[int]) -> float:
         if len(menu) > idx >= 0:
             total_prices += float(prices[idx])
 
-    return total_prices
+    return round(total_prices, 2)
 
 
 # this function outputs a unique string everytime it is called, which acts as an order number
